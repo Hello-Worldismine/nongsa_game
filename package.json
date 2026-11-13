@@ -1,0 +1,39 @@
+{
+  "name": "haetsal-village",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "햇살마을 - 친구 10명이 함께 사는 귀여운 픽셀 멀티플레이 농장 게임",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "check:supabase": "node scripts/check-supabase.mjs",
+    "deploy": "npm run build && npx netlify deploy --prod --dir dist --no-build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "galmuri": "^2.40.3",
+    "phaser": "^3.90.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@playwright/test": "^1.65.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}
